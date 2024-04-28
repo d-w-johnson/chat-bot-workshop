@@ -15,7 +15,7 @@ public class ImmatureFallbackBot implements ChatBot {
 	public void receiveMessage(String message) throws IOException {
 		//TODO: send "You already said that..." if the message is in the chat history more than once
 		
-		//TODO: Add different messages that can be sent
+		//TODO: Add different messages that can be sent (example commit change)
 		
 		chatSession.sendMessage("Look at me, I'm " + chatSession.getUserName() + ": \"" + message + "\" BWAHAHAHAHAHAHAHA!!!!!!");
 	}
