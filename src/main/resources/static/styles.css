@@ -1,0 +1,84 @@
+body, html {
+	font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    padding: 20px;
+    background-color: #5465a1;
+}
+
+#messages {
+	flex: 1;
+	display: flex;
+    flex-direction: column-reverse;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    color: #f0f0f0;
+}
+
+#messageInput {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+#inputFieldAndButton {
+    display: flex;
+    padding-top: 8px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 8px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #6588af;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #506f91;
+}
+
+.bubble {	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.me {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot {
+    background-color: #008CBA;
+    color: white;
+    align-self: flex-start;
+}
+
+.sender-label {
+    font-weight: bold;
+}
+
+.message-content {
+}
