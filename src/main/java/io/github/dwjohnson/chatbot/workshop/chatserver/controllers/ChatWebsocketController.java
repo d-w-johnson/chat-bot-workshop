@@ -24,7 +24,8 @@ public class ChatWebsocketController implements WebSocketHandler {
 
     @Override
     public void handleMessage(WebSocketSession session, WebSocketMessage<?> message) throws Exception {
-        System.out.println("Received message: " + message.getPayload());
+//        System.out.println("Received message: " + message.getPayload());
+    	//This is really important because of a weird network one of our clients has, so don't delete it.
         chatBotsBySession.get(session.getId()).receiveMessage(message.getPayload().toString());
     }
 

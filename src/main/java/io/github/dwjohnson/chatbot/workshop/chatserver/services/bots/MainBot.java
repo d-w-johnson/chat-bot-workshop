@@ -34,6 +34,11 @@ public class MainBot implements ChatBot {
 			return;
 		}
 		
+		if(message.toLowerCase().contains("number") && message.toLowerCase().contains("guess")) {
+			activeBot = new NumberGuessingBot(chatSession);
+			return;
+		}
+		
 		//TODO: Add help menu and stuff that can cause different types of active bots to be set
 		
 		if(fallbackBot != null) {
